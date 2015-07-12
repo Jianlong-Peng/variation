@@ -1,0 +1,10 @@
+A framework for variation discovery and genotyping using next-generation DNA sequencing data
+http://www.nature.com/ng/journal/v43/n5/full/ng.806.html
+
+
+From FastQ Data to High-Confidence Variant Calls: The Genome Analysis Toolkit Best Practices Pipeline
+http://onlinelibrary.wiley.com/doi/10.1002/0471250953.bi1110s43/abstract;jsessionid=A0A87EC5F02BB171033FCCDA99D9D7C5.f03t02?systemMessage=Wiley+Online+Library+will+be+disrupted+on+11th+July+2015+at+10%3A00-16%3A00+BST+%2F+05%3A00-11%3A00+EDT+%2F+17%3A00-23%3A00+SGT+for+essential+maintenance.+However+there+may+be+a+possible+delay+so+the+start+time+may+change.++Apologies+for+the+inconvenience.
+
+
+how to cite GATK
+https://www.broadinstitute.org/gatk/about/citing

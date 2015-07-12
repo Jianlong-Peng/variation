@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+        <html lang='en'>
+        <head>
+            <meta charset='utf-8'>
+            <title>GATK | GATK | About</title>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <meta name='description' content='The website of the Genome Analysis Toolkit'>
+            <meta name='author' content='Genome Sequencing and Analysis Group @ Broad Institute'>
+
+            <!-- Javascript -->
+
+            <script type='text/javascript' src='../../gatk/resources/js/jquery-1.7.2.min.js'></script>
+            <script type='text/javascript' src='../../gatk/resources/js/prettify.js'></script>
+            <script type='text/javascript' src='../../gatk/resources/js/bootstrap.min.js'></script>
+
+            <!-- MathJax / MathML support for displaying equations -->
+	        <script type='text/x-mathjax-config'>
+		        MathJax.Hub.Config({
+  			        TeX: { equationNumbers: { autoNumber: 'AMS' } }
+		        });
+	        </script>
+            <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+            
+
+            <!-- Le styles -->
+
+            <link type='text/css' rel='stylesheet' href='../../gatk/resources/css/bootstrap.css'>
+            <link type='text/css' rel='stylesheet' href='../../gatk/resources/css/font-awesome.min.css'>
+            <link type='text/css' rel='stylesheet' href='../../gatk/resources/css/prettify.css'>
+            
+
+            <style type='text/css'>
+                @media (min-width: 980px) {
+                    body {
+                        padding-top    : 80px;
+                        padding-bottom : 0;
+                    }
+                }
+                .brand {
+                        padding-top    : 0;
+                        padding-bottom : 0;
+                    }
+                .nav-margin {
+                    margin-top : 18px !important;
+                }
+                footer {
+                    background-color : #333;
+                    color            : #999;
+                margin: 0 -20px;
+                padding: 20px;
+                }
+            #searchform {
+                margin-top : 0 !important;
+            }
+            </style>
+
+            <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+            <!--[if lt IE 9]>
+            <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+            <link rel='stylesheet' href='../../gatk/resources/css/font-awesome-ie7.css'>
+            <![endif]-->
+
+            <!-- Le fav and touch icons -->
+            <!--<link rel='shortcut icon' href='../../gatk/resources/ico/favicon.ico'>
+
+            <link rel='apple-touch-fa fa-precomposed' sizes='144x144' href='../../gatk/resources/ico/apple-touch-fa fa-144-precomposed.png'>
+            <link rel='apple-touch-fa fa-precomposed' sizes='114x114' href='../../gatk/resources/ico/apple-touch-fa fa-114-precomposed.png'>
+            <link rel='apple-touch-fa fa-precomposed' sizes='72x72' href='../../gatk/resources/ico/apple-touch-fa fa-72-precomposed.png'>
+            <link rel='apple-touch-fa fa-precomposed' href='../../gatk/resources/ico/apple-touch-fa fa-57-precomposed.png'>   -->
+
+            <script>
+                (function() {
+                    var cx = '009159892992079491870:witrdcjfp_8';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+
+        </head><body onload="prettyPrint();bootstrap_tab_bookmark();"><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount',
+    'UA-33535118-1']);_gaq.push(['_setDomainName', 'broadinstitute.org']);_gaq.push(['_setAllowLinker',
+    true]);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type =
+    'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
+    + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+    s);})();
+</script>
+<header class='navbar navbar-fixed-top'>
+		<div class='navbar-inner'>
+			<div class='container'>
+				<a class='btn btn-navbar nav-margin' data-toggle='collapse' data-target='.nav-collapse'>
+					<span class='fa fa-bars'></span>
+				</a>
+				<a class='brand' href='../../gatk'><img src='../../gatk/resources/img_shared/logo-gatk.png' alt='gatk' /></a>
+				<div class='nav-collapse nav-margin'><ul class='nav'><li class=''><a href='../../gatk/home'><i class='fa fa-home'></i> Home</a></li><li class='active'><a href='../../gatk/about'><i class='fa fa-info-circle'></i> About</a></li><li class=''><a href='../../gatk/guide'><i class='fa fa-book'></i> Guide</a></li><li class=''><a href='../../gatk/blog'><i class='fa fa-bullhorn'></i> Blog</a></li><li class=''><a href='http://gatkforums.broadinstitute.org/'><i class='fa fa-comments-o'></i> Forum</a></li><li class=''><a href='../../gatk/download'><i class='fa fa-download'></i> Download</a></li></ul>
+                    <form id='searchform' class='navbar-search pull-right nav-margin' method='get' action='../../gatk/search'>
+                        <label for='s' class='assistive-text hidden'>Search</label>
+                        <input type='search' class='search-query' name='q' id='q' placeholder='Search'>
+                    </form>
+				</div>
+			</div>
+		</div></header>
+	<div class='container'><script>
+function changeTab( num ) {
+	$('#aboutPills li:eq(' + num + ') a').tab('show');
+	window.scrollTo(0, document.getElementById('aboutTabs').offsetTop-70);
+}
+</script>
+<style>
+.space-below {
+	margin-bottom: 40px;
+}
+#aboutPills li {
+	margin: 0 12px 0 0;
+}
+#aboutPills li a {
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	padding: 0;
+	border-right: 100px;
+	-moz-border-radius:	100px !important;
+	-webkit-border-radius:	100px !important;
+	border-radius:	100px !important;
+}
+#img-icon {
+	height: 144px;
+	width: 144px;
+	float: left;
+	line-height:144px;
+	font-size: 144px;
+}
+a.nohover:hover {
+	text-decoration: none;
+}
+</style>
+
+<div class="row">
+    <aside class="span3">
+        <nav><h3><i class='fa fa-info-circle'></i> About</h3><br /><ul class='nav nav-list'><li class='active'><a href='../../gatk/about/index'><i class=''></i> Introduction to GATK</a></li><li class=''><a href='../../gatk/about/citing'><i class=''></i> Citing GATK</a></li><li class=''><a href='../../gatk/about/cited-by'><i class=''></i> GATK is cited by...</a></li><li class=''><a href='../../gatk/about/user-stories'><i class=''></i> Real-world impact</a></li><li class=''><a href='../../gatk/about/dev-team'><i class=''></i> Development team</a></li></ul></nav>    </aside>
+    
+    <div class="span9">
+     
+        <h1>Introduction to GATK</h1>
+        <br />
+		<ul id="aboutPills" class="nav nav-pills about">
+            <li class="active">
+              <a href="#what-is-the-gatk" data-toggle="pill"><h4>What is the<br />GATK?</h4></a>
+            </li>
+            <li>
+              <a href="#using-the-gatk" data-toggle="pill"><h4>Using the<br />GATK</h4></a>
+            </li>
+            <li>
+              <a href="#typical-workflows" data-toggle="pill"><h4>Typical<br />Workflows</h4></a>
+            </li>
+            <li>
+              <a href="#high-performance" data-toggle="pill"><h4>High<br />Performance</h4></a>
+            </li>
+            <li>
+              <a href="#getting-help" data-toggle="pill"><h4>Getting<br />Help</h4></a>
+            </li>
+            <li>
+              <a href="#licensing" data-toggle="pill"><h4>Licensing & Source Code</h4></a>
+            </li>
+		</ul>
+        
+        <div id="aboutTabs" class="tab-content row-fluid">
+
+        	<div class="tab-pane fade in active" id="what-is-the-gatk">
+            	<h2>What is GATK?<br />
+            	<small>Simply what it says on the can: a Toolkit for Genome Analysis</small></h2>
+              	<hr />
+				<p>Say you have ten exomes and you want to identify the rare mutations they all have in common – the GATK can do that. Or you need to know which mutations are specific to a group of patients, as opposed to a healthy cohort – the GATK can do that too. In fact, the GATK is the industry standard for such analyses.</p>
+				<br>
+            	<div class="row-fluid">
+            		<div class="span6">
+               			<h4>But wait, there's more!</h4>
+						<p>Because of the way it is built, the GATK is highly generic and can be applied to all kinds of datasets and genome analysis problems. It can be used for discovery as well as for validation. It's just as happy handling exomes as whole genomes. It can use data generated with a variety of different sequencing technologies. It can handle RNAseq data. And although it was originally developed for human genetics, the GATK has evolved to handle genome data from any organism, with any level of ploidy. Your plant has six copies of each chromosome? Bring it on.</p>
+              		</div>
+              		<div class="span6">
+						<div class="thumbnail">
+	            			<img src="../img/organisms.png" alt="Organisms">
+	            			<div class="caption">
+	              				<p>The GATK can handle a variety of organism genomes in addition to humans.</p>
+        					</div>
+						</div>
+					</div>
+				</div>
+	        	<p>&nbsp;</p>
+				<div class="row-fluid"> 
+	            	<div class="span6">
+	            		<div class="thumbnail">
+	            			<img src="../img/toolduo.png" alt="Toolbox and toolchain">
+	            			<div class="caption">
+								<p>The toolkit provides a wide set of tools that can be chained into workflows, taking advantage of the common architecture and powerful engine.</p>
+	            			</div>
+						</div>
+					</div>
+					<div class="span6">
+						<h4>So what's in the can?</h4>
+						<p>At the heart of the GATK is an industrial-strength infrastructure and engine that handle data access, conversion and traversal, as well as high-performance computing features. On top of that lives a rich ecosystem of specialized tools, called "walkers", that you can use out of the box, individually or chained into scripted workflows, to perform anything from simple data diagnostics to complex "reads-to-results" analyses.</p>
+						<p>Some typical workflows are detailed on the next page of this section. Please see the <a href="../guide/tooldocs/">Tool Documentation</a> section for a complete list of tools and their capabilities.</p>
+					</div>
+				</div>
+				<hr />
+	            <span>
+	            	<a class="pull-right" href="#using-the-gatk" onclick="changeTab(1)">Using the GATK <i class="fa fa-arrow-right"></i></a>
+	            </span>
+	        	<p>&nbsp;</p>
+			</div>
+      	
+			<div class="tab-pane fade" id="using-the-gatk">
+				<h2>Using the GATK<br /> 
+				<small>Get started today</small></h2>
+		    	<hr />
+				<div class="row-fluid">
+		        	<div class="span6">
+		        		<h4>Platform and requirements</h4>
+						<p>The GATK is designed to run on Linux and other POSIX-compatible platforms. Yes, that includes MacOS X! If you are on any of the above, see the <a href="../download">Downloads</a> section for downloading and installation instructions. If you're stuck with Windows, you're not completely out of luck – it's possible to use the GATK with Cygwin, although we can't provide any specific support for that. If you're on something else... no, there are no plans to port the GATK to Android or iOS in the near future.</p>
+						<p>You will need to have Java installed  to run the GATK, and some tools additionally require R to generate PDF plots. Version requirements and installation instructions for both can be found in the <a href="../guide">Documentation Guide</a>.</p>
+					</div>          
+		        	<div class="span6">
+		            	<div class="thumbnail">
+		            		<img src="../img/unixes2.png" alt="Unix-based operating systems">
+		            		<div class="caption">
+								<p>The GATK is designed to run on Linux and other POSIX-compatible platforms. Yes, that includes MacOS X!</p>            
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+				<div class="row-fluid">
+					<div class="span6">
+		  				<div class="thumbnail">
+            				<img src="../img/gatkrunsonjava.png" alt="The GATK runs on Java">
+            				<div class="caption">
+              					<p><br>The GATK runs on Java, straight from the command-line.</p>
+        					</div>
+						</div>
+					</div>	
+		        	<div class="span6">
+						<h4>Interface</h4>
+						<p>Now here's the kicker: the GATK does not have a graphical user interface. All tools are called via the command-line interface. </p>
+						<p>If that is not something you are used to, or you have no idea what that even means, don't worry. It's easier to learn than you might think, and there are many good <a href="http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything">online tutorials</a> that can get help you get comfortable with the command-line environment. Before you know it you'll be writing scripts to chain tools together into workflows... You don't need to have any programming experience to use the GATK, but you might pick some up along the way!</p>
+					</div>
+				</div>
+      			<br />
+				<div class="row-fluid">
+					<div class="span6">
+						<h4>Command structure and tool arguments</h4>
+						<p>All the GATK tools are called using the same basic command structure. Here's a simple example that counts the number of sequence reads in a BAM file:</p>
+<pre class="prettyprint linenums">java -jar GenomeAnalysisTK.jar \
+	-T CountReads \
+	-R example_reference.fasta \
+	-I example_reads.bamgsaw
+</pre>
+						<p>The <code>-jar</code> argument invokes the GATK engine itself, and the <code>-T</code> argument tells it which tool you want to run.  Arguments like <code>-R</code> for the genome reference and <code>-I</code> for the input file are also given to the GATK engine and can be used with all the tools (see complete list of <a href="../guide/tooldocs/org_broadinstitute_sting_gatk_CommandLineGATK.html">available arguments for the GATK engine</a>. Most tools also take additional arguments that are specific to their function. These are listed for each tool on that tool's documentation page, all easily accessible through the <a href="../guide/tooldocs/">Tool Documentation</a> index.</p>
+					</div>
+					<div class="span6">
+		    			<div class="thumbnail">
+		        	  		<img src="../img/cmd_output.jpg" alt="Output of the example command">
+		        	    	<div class="caption">
+		         		   		<p>The GATK outputs structured command information, status messages and result summaries to the console.</p>
+							</div>
+						</div>
+					</div>
+				</div>     
+				<br />    
+				<p>Please see <a  href="../guide/topic?name=tutorials">this page</a> for more detailed tutorials on using the GATK tools.</p>
+				<hr />
+				<span>
+					<a class="pull-left" href="#what-is-the-gatk" onclick="changeTab(0)"><i class="fa fa-arrow-left"></i> What is the GATK?</a>
+					<a class="pull-right" href="#typical-workflows" onclick="changeTab(2)">Typical Workflows <i class="fa fa-arrow-right"></i></a>
+				</span> 
+	        	<p>&nbsp;</p>          
+			</div>
+	
+			<div class="tab-pane fade" id="typical-workflows">
+		        <h2>Typical Workflows<br /> 
+		        <small>From sequencing reads to actionable results</small></h2>
+		        <hr />
+				<p>When you're isolating DNA in the lab, you don't treat the work like isolated, disconnected tasks. Every task is a step in a well-documented protocol, carefully developed to optimize yield, purity and to ensure reproducibility as well as consistency across all samples and experiments.</p>
+		        <p><strong>We believe working with NGS data should be exactly the same.</strong></p>
+				<p>That's why we have developed industry-standard workflows that are optimized to produce the most accurate results from your dataset, with the most efficiency in terms of both manual handling and computational cost.</p>
+				<br />
+				<div class="row-fluid">
+					<div class="span4">
+						<h4>NGS data processing<br></h4>
+						<p>Whatever the sequencing technology you're using, you need to process the raw dataset to make it suitable for analysis. These <a href="?dpp">data processing workflows</a> guide you through the necessary steps, with detailed explanations of each operation, why it is required and what transformations are applied to the data.</p>
+						<div class="thumbnail">
+		            		<img src="../img/DPP.png" alt="data processing workflow">
+						</div>
+					</div>
+					<div class="span8">
+						<h4>Variant discovery, genotyping and filtering</h4>
+						<p>Finding sequence variation within and between samples is fairly straightforward. Distinguishing what part of that variation is real and assigning the right genotypes is a heck of a lot more difficult. These variant discovery, genotyping and filtering workflows and protocols help you choose the parameters that are most appropriate for your dataset and guides you through the necessary steps to produce a variant callset that you can trust. Various options are available depending on whether you're working with whole genomes or exomes and according to the type, number and coverage depth of your samples.</p>
+						<div class="thumbnail">
+		            		<img src="../img/VCallP.png" alt="variant discovery, genotyping and filtering workflow">
+						</div>
+					</div>
+				</div>
+				<br />
+				<h4>Best practices for calling variants with the GATK</h4>
+				<p>This reads-to-results variant calling workflow lays out the <a href="../guide/best-practices">best practices</a> recommended by our group for all the steps involved in calling variants with the GATK. It is used in production at the Broad Institute on every genome that rolls out of the sequencing facility. Be sure to check out the series of <a href="../guide/presentations">workshop videos</a> dedicated to this workflow!</p>
+				<div class="thumbnail">
+					<img src="../img/BP_workflow_3s.png" alt="Best Practices workflow">
+				</div>
+				<br />
+				<p>See the <a href="../guide/best-practices">Best Practices documentation</a> for more detail.</p>
+				<hr />
+		    	<span>
+		    		<a class="pull-left" href="#using-the-gatk" onclick="changeTab(1)"><i class="fa fa-arrow-left"></i> Using the GATK</a>
+		        	<a class="pull-right" href="#high-performance" onclick="changeTab(3)">High Performance <i class="fa fa-arrow-right"></i></a>
+		  		</span>
+	        	<p>&nbsp;</p>
+			</div>
+	
+			<div class="tab-pane fade" id="high-performance">
+	            <h2>High Performance<br />
+	            <small>Built for scalability and parallelism</small></h2>
+	            <hr />
+	            <div class="row-fluid">
+	        		<div class="span6">
+						<p>The GATK was built from the ground up with performance in mind.</p>
+						<h4>Map/Reduce: it's not just for Google anymore</h4>
+						<p>Every GATK walker is built using the Map/Reduce framework, which is basically a strategy to speed up performance by breaking down large iterative tasks into shorter segements then merging overall results.</p>
+	            		<h4>Muli-threading</h4>
+						<p>The GATK takes advantage of the latest processors using multi-threading, i. e. run using multiple cores on the same machine. Multi-threading is enabled simply by using the <code>-nt</code> and <code>-nct</code> command line arguments. See <a href="../guide/article?id=1975">this article</a> for details.</p>
+					</div>          
+	        		<div class="span6">
+	            		<div class="thumbnail">
+							<br>
+	            			<img src="../img/multithread.png" alt="Multi-threading">
+	            			<div class="caption">
+	              				<p>The GATK does multi-threading.</p>        
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+				<div class="row-fluid">
+					<div class="span6">
+	  					<div class="thumbnail">
+	        		  		<img src="../img/queue.png" alt="Queue and scatter-gather">
+	        	  		  	<div class="caption">
+	         		   			<p>Queue uses a scatter-gather process to parallelize operations.</p>
+	        				</div>
+						</div>
+					</div>	
+	        		<div class="span6">
+						<h4>Out on the farm with Queue</h4>
+						<p>Queue is a companion program that allows the GATK to take parallelization to the next level: running jobs on a high-performance computing cluster, or server farm.</p>
+						<p>Queue manages the entire process of breaking down big jobs into many smaller ones (scatter) then collecting and merging results when they are done (gather).</p>
+						<p>At the Broad, we use a Queue pipeline to run GATK analyses on hundreds, even thousands of exomes, on our cluster of hundreds of nodes.</p>
+					</div>
+				</div>   
+				<p>&nbsp;<br />See <a href="../guide/article?id=1988">this article</a> for more details on parallelism with the GATK.</p>
+				<hr />
+				<span>
+					<a class="pull-left" href="#typical-workflows" onclick="changeTab(2)"><i class="fa fa-arrow-left"></i> Typical Workflows</a>
+					<a class="pull-right" href="#getting-help" onclick="changeTab(4)">Getting Help <i class="fa fa-arrow-right"></i></a>
+				</span>
+	        	<p>&nbsp;</p>
+			</div>
+	    
+		    <div class="tab-pane fade" id="getting-help">
+		    	<h2>Getting Help<br />
+		    	<small>Don't panic! Help is at hand.</small></h2>
+		   		<hr />
+				<p>The GATK has a reputation for being wicked complicated, and it's not entirely undeserved. With great power comes great <del>responsibility</del> complexity... But don't panic! Help is at hand.</p>
+				<p>Our crack team of space monkeys has put together a revolutionary documentation and support system to help you get the answers you need, fast and with the least amount of pain. It's composed of reference guides, tutorials, videos and a forum that are all cross-connected, so that relevant material from various sources is automatically aggregated for you, whether you're browsing an index or searching by keyword.</p>
+				<p>All that time you'll save on looking for information and troubleshooting? Feel free to use it to get even more work done... or finally have a life!</p>
+		       	<br />
+		       	<h4>The Hitchhiker's Guide to the GATK</h4>
+		       	<hr />
+		       	<div class="row-fluid">
+		            <a class="nohover" href="../guide/"><i id="img-icon" class="fa fa-book"></i></a>
+					<p>If you've ever wondered "Is there a tool that can do X?" or "Does this tool have an argument to do Y?", the <a href="../guide/tooldocs/">Technical Documentation</a> should be your first stop.</p>
+					<p>Every tool in the GATK has its own article detailing what it does and how it does it, as well as all the available options, default parameter values and argument names. There are also articles detailing options and arguments of the GATK engine, which are common to all GATK tools, and documenting companion software such as Queue.</p>
+					<p>In addition to this technical documentation, the <a href="../guide/">Guide</a> also features more "meta" articles detailing <a href="../guide/topic?name=methods">methods and workflows</a> including <a href="../guide/topic?name=best-practices">Best Practices</a> recommendations for study design and analysis. Or if you're looking to write your own walkers and Queue scripts, check out the <a href="../guide/topic?name=developer-zone">Developer Zone</a>!</p>
+		       	</div>
+		      	<br />
+		     	<h4>FAQs, tutorials and videos</h4>
+				<hr />
+		        <div class="row-fluid">
+		            <a class="nohover" href="../guide/topic?name=faqs"><i id="img-icon" class="fa fa-play-circle"></i></a>
+					<p>The <a href="../guide/">Guide</a> is further enriched by a regularly updated collection of <a href="../guide/topic?name=faqs">Frequently Asked Questions</a>, as well as <a href="../guide/topic?name=tutorials">tutorials</a> – some in <a href="../guide/topic?name=videos">video</a> form – that will guide you step by step through various tasks such as running analyses and troubleshooting errors.</p>
+					<p>And because we know there are few things more frustrating than trawling through tutorials that are either too basic, too advanced or otherwise not appropriate for your needs, each tutorial is clearly labeled to identify the intended audience type ( <span class="label">Analyst</span> or <span class="label label-inverse">Developer</span> ), level ( <span class="label label-success">Basic</span>, <span class="label label-warning">Intermediate</span>, or <span class="label label-important">Advanced</span> ) and prerequisite knowledge.</p>
+				</div>
+		       	<br />
+		       	<h4>Community forum</h4>
+		      	<hr />
+		       	<div class="row-fluid">
+		            <a class'nohover' href="http://gatkforums.broadinstitute.org/post/discussion"><i id="img-icon" class="fa fa-comments-alt"></i></a>
+					<p>Finally, if you've exhausted all these avenues and still haven't found the answer to your question, ask the <a href="http://gatkforums.broadinstitute.org/">forum</a>! It's powered by rainbows and staffed by unicorns who love to answer USER ERROR questions.</p>
+					<p>Well, maybe not unicorns, but a <a href="dev-team">team of computational biologists and software engineers</a> who work hard to address your problems quickly and accurately. If something's not clearly documented, we'll answer you question and improve the docs accordingly. If you think you found a bug, we'll track it down and fix it. Just <a href="http://gatkforums.broadinstitute.org//categories/ask-the-team">Ask the Team</a>. </p>
+		       	</div>
+				<hr />
+		        <span>
+		        	<a class="pull-left" href="#high-performance" onclick="changeTab(3)"><i class="fa fa-arrow-left"></i> High Performance</a>
+		            <a class="pull-right" href="#licensing" onclick="changeTab(5)">Licensing & Source Code<i class="fa fa-arrow-right"></i></a>
+		   		</span>
+	        	<p>&nbsp;</p>
+		    </div>
+	    
+			<div class="tab-pane fade" id="licensing">
+		  		<h2>Licensing & Source Code<br />
+				<small><!-- subtitle goes here --></small></h2>
+		     	<hr />
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h4>Free for academics, fee for commercial use</h4>
+                        <p>The GATK and its sister program, MuTect, are increasingly used not just in academic research, but also in clinical and commercial production environments. In order to sustain a development team that can meet the high standards required for the quality of the software itself as well as the support that we provide, we release GATK and MuTect under a mixed licensing model. This means that researchers at academic and non-profit organizations can access the tools and source code for free, while for-profit organizations are required to purchase a license. The revenue generated by this model is then used to fund and build out our support team and infrastructure to accommodate the demand for support in the community, as well as invest more resources to improve development speed, functionality and stability overall.</p>
+                    </div>
+                    <div class="span6">
+                         <h4>Direct licensing and support through Broad</h4>
+                    <p>As of April 16, 2015, we are providing licensing and support directly to commercial/for-profit organizations that will be running the GATK or MuTect internally or as part of their own hardware offering. This new licensing arrangement will allow licensed customers better access to the GATK and MuTect development and support teams, full support for the latest releases of our tools, and the most up-to-date Best Practice recommendations that are based on our team's extensive analysis and R&D work. Users who currently hold a license purchased through our former commercial partner, Appistry, will continue to be supported by Appistry until their license expires, at which time they will have the opportunity to renew their license through the Broad Institute. All users are welcome to enjoy the support we offer for free through the forum.</p>
+                    </div>
+                </div>
+                <hr /><br />
+                <p>For more information about the licensing and the recent transition from Appistry to direct-through-Broad licensing, please read our announcement on the <a href='http://www.broadinstitute.org/gatk/blog'>GATK blog</a> or contact <a href='mailto:softwarelicensing@broadinstitute.org'>softwarelicensing@broadinstitute.org</a> directly with any questions about licensing, pricing or the availability of premium support.</p>
+
+		     	<!--<div class="row-fluid">
+		            <div class="span6">
+						<h4>Free for academics, fee for commercial use</h4>
+						<p>The GATK is increasingly used not just by academic researchers, but by commercial companies who have needs, in terms of support and production readiness, that are beyond what our small development team can provide. Charging a licensing fee for commercial use gives us the means to provide upgraded support for those users, as well as invest more resources to improve development speed, functionality and stability overall. That being said, we remain committed to providing free access to the full-featured GATK for non-commercial use by the academic scientific community.</p>
+					</div>
+		            <div class="span6">
+						<h4>Mixed closed/open-source model </h4>
+						<p>The entire GATK engine and infrastructure (i.e. the programming framework) as well as a large number of utility tools are open-source and provided to all free of charge under the original MIT license. The source code for the full GATK suite (which also includes the Best Practices tools) is freely available for non-commercial use to the academic research community; while commercial users may obtain access to the source code if they purchase a license from our partner, <a href='http://www.appistry.com/'>Appistry</a>. Please see the license text for full details.</p>
+					</div>
+				</div>
+				<hr /><br />
+				<div class="row-fluid">
+					<div class="span2">
+						<a href="http://www.appistry.com/"><img src='../img/Appistry_LOGOmark-WEB_sm.png' alt='Appistry'></a>
+					</div>
+					<div class="span10">
+						<h4>Introducing Appistry, our exclusive partner for commercial licensing and support</h4>
+						<p>We have selected <a href='http://www.appistry.com/'>Appistry</a> to be the exclusive partner who will handle <a href='http://www.appistry.com/gatk'>for-profit GATK licensing and support</a>. If you have any questions, please visit their page of <a href='http://www.appistry.com/gatk/gatk-faqs-static'>Frequently Asked Questions about for-profit GATK</a>, and contact them directly to inquire about pricing or any "special case" scenario you feel may apply to your use of the GATK.</p>
+					</div>
+				</div>
+				<hr /><br />
+		  		<h4>Which GATK package is right for you?</h4><br />
+				<div>
+					<br /><img src='../img/gatk-flavors.png' alt='GATK packages'><br />
+				</div>
+				<hr /><br />
+				<p>If you would like to discuss why we have made these changes to the licensing model, please see our own discussion thread on <a href="">licensing and source code in GATK 2</a>.</p>
+		        <hr />
+		      	<span>
+		      		<a class="pull-left" href="#getting-help" onclick="changeTab(4)"><i class="fa fa-arrow-left"></i> Getting Help</a>
+		            <a class="pull-right" href="../download">Downloads <i class="fa fa-arrow-right"></i></a>
+		   		</span>
+	        	<p>&nbsp;</p>-->
+			</div>
+		</div>
+	</div>
+</div><!--/row-->
+
+<script> /* not sure this is working */
+function bootstrap_tab_bookmark (selector) { if (selector == undefined) {
+    selector = "#aboutPills "; }
+
+    /* Automagically jump on good tab based on anchor */
+    $(document).ready(function() {
+        url = document.location.href.split('#');
+        if(url[1] != undefined) {
+            $(selector + '[href=#'+url[1]+']').tab('show');
+        }
+    });
+
+    var update_location = function (event) {
+        document.location.hash = this.getAttribute("href");
+    }
+
+    /* Update hash based on tab */
+    $(selector + "[data-toggle=pill]").click(update_location);
+    $(selector + "[data-toggle=tab]").click(update_location);
+}
+</script>
+
+
+    </div><!--/container-->
+    <div>&nbsp;</div>
+    <footer>
+    <div class='container'>
+    <a href='http://www.broadinstitute.org'><img src='../../gatk/resources/img_shared/broad-logo-333.png' width='118' height='35' alt='The Broad Institute'/></a>
+    <p>&#169; Broad Institute 2015</p>
+    </div>
+    </footer>
+    </body>
+    </html>
